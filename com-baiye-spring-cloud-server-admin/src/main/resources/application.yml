@@ -1,0 +1,54 @@
+spring:
+  profiles: pro1
+  application:
+    name: spring-cloud-server-admin-producer
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/springbootdemo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: root
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+    type-aliases-package: com.baiye.spring.cloud.databases.entity
+    mapper-locations: classpath:mapper/*.xml
+
+server:
+  port: 8001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:9091/eureka/,http://peer2:9092/eureka/
+
+---
+spring:
+  profiles: pro2
+  application:
+    name: spring-cloud-server-admin-producer
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/springbootdemo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: root
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+    type-aliases-package: com.baiye.spring.cloud.databases.entity
+    mapper-locations: classpath:mapper/*.xml
+
+server:
+  port: 8002
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/
