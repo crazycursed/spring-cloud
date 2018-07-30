@@ -1,4 +1,4 @@
-package com.baiye.com.bai.ye.spring.cloud.databases;
+package com.baiye.spring.cloud.ribbitmq.consumer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,10 +7,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ComBaiyeSpringCloudDatabasesApplicationTests {
+public class ComBaiyeSpringCloudRibbitmqConsumerApplicationTests {
 
-    @Test
-    public void contextLoads() {
-    }
+	@Test
+	public void contextLoads() {
+	}
 
 }

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-ribbitmq-consumer
+  rabbitmq:
+    host: 123.207.73.168
+    port: 5672
+    username: rabbit
+    password: 123456
+server:
+  port: 8081
+
