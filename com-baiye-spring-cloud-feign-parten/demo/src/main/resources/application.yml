@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-cloud-web-admin-feign
+
+server:
+  port: 8085
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer3:9090/eureka/
+
+feign:
+  hystrix:
+    enabled: true
